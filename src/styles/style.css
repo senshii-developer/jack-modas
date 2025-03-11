@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(143, 108, 175);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+table{
+    background-color: aliceblue;
+}
+
+a {
+    align-self: flex-start;
+    color: aliceblue;
+    margin-top: auto;
+}
+
+ul {
+    list-style: none;
+}

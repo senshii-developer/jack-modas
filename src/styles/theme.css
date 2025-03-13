@@ -1,0 +1,24 @@
+:root{
+    --font-sm: 1rem;
+    --font-base: 1.5rem;
+    --font-lg: 1.75rem;
+    --font-xl: 2rem;
+    --font-2xl: 2.25rem;
+
+    --text: #441752;
+    --subtext: #8174A0;
+    --base: #FFDFEF;
+    --foreground: #D69ADE;
+    --base-shadow: #e2a1c2;
+
+    --mobile: 20rem; 
+    --tablet: 30rem; 
+    --small-desktop: 40rem; 
+    --desktop: 80rem;
+
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-base: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+}

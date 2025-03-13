@@ -1,24 +1,124 @@
-body{
-    background-color: rgb(143, 108, 175);
-    margin: 0;
-    padding: 0;
+#header {
+    position: sticky;
+    top: 0;
+
+    max-width: var(--desktop);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-inline: auto;
+    padding-inline: 1rem;
+
+    border-bottom: 1px solid var(--foreground);
+}
+
+.nav-container {
+    display: flex;
+    height: 100%;
+    width: fit-content;
+}
+
+.nav-item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 100%;
+    background-color: var(--base);
+    transition: background-color ease 0.5s;
+}
+
+.nav-item > img {
+    --scale:calc(100% * 0.8);
+    width: var(--scale);
+    height: var(--scale);
+    transition: transform ease 0.2s;
+    transform: translateY(0);
+}
+
+.nav-item:hover {
+    background-color: var(--base-shadow);
+}
+
+.nav-item:hover >img {
+    transform: translateY(-4px);
+}
+
+.nav-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: width cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
+    background-color: var(--text);
+}
+
+.nav-item:hover::after{
+    width: 75%;
+}
+
+#header>a {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    width: 90px;
 }
 
-table{
-    background-color: aliceblue;
+.categories {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: var(--text);
+    font-size: var(--font-lg);
 }
 
-a {
-    align-self: flex-start;
-    color: aliceblue;
-    margin-top: auto;
+.categories>li {
+    height: 100%;
 }
 
-ul {
-    list-style: none;
+.categories>li>a {
+    background-color: var(--base);
+    position: relative;
+    padding-inline: calc(var(--space-base));
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: background-color ease 0.5s;
+    font-weight: 600;
+}
+
+.categories > li > a > span {
+    transform: translateY(0);
+    transition: transform ease 0.3s;
+}
+
+.categories>li>a:hover > span{
+    transform: translateY(-4px);
+}
+
+
+.categories>li>a:hover {
+    background-color: var(--base-shadow);
+    cursor: pointer;
+}
+
+.categories>li>a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--text);
+    transition: width cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
+}
+
+.categories>li>a:hover::after {
+    width: 75%
 }

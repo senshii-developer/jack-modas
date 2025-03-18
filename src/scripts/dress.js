@@ -1,4 +1,4 @@
-const IMAGES_BASE_PATH = "/public/images"
+const IMAGES_BASE_PATH = "public/images"
 const BRANDS = ["aurora", "eloa", "monique", "samanta"]
 const BRAND_COLOR_QUANTITIES = {
     aurora: [

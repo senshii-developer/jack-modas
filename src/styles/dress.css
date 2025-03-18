@@ -1,0 +1,103 @@
+@import "theme.css";
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--space-base);
+    width: var(--desktop);
+    margin-inline: auto;
+    height: fit-content;
+    margin-top: 1px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    background-color: var(--base-shadow);
+    padding: var(--space-base);
+}
+
+.card-image-container {
+    background-image: var(--image-url);
+    width: 100%;
+    height: 24rem;
+    background-size: 100%;
+    background-position: 50% 40%;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+
+    &:hover{
+        background-size: 150%;
+        background-position: 50% 20%;
+    }
+}
+
+.size-container {
+    display: flex;
+    gap: var(--space-sm);
+    font-size: var(--font-xs);
+    color: var(--subtext);
+    cursor: default;
+}
+
+.card-name {
+    width: fit-content;
+    font-weight: 600;
+    position: relative;
+    transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+    &::after{
+        content: "";
+        position: absolute;
+        left:0;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background-color: var(--text);
+        transition: width ease 1s;
+    }
+
+    &:hover::after{
+        width: 75%;
+    }
+
+    &:hover {
+        transform: translateX(4px);
+    }
+}
+
+.card-price {
+    font-size: var(--font-sm);
+    cursor: default;
+}
+
+.color-container{
+    display: flex;
+    gap: var(--space-base);
+    width: fit-content;
+}
+
+.color {
+    border-radius: 100%;
+    width: var(--space-lg);
+    height: var(--space-lg);
+    background-color: var(--color-button);
+    border: 2px solid var(--text);
+    transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
+
+    & > input {
+        appearance: none;
+    }
+
+    &:hover {
+        transform: scale(0.85);
+    }
+
+    &:has(>input:checked){
+        border: 2px solid gold;
+    }
+}

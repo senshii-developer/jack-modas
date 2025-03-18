@@ -1,13 +1,17 @@
 @import "./normalize.css";
 @import "./style.css";
 @import "./theme.css";
+@import "./header.css";
 
 html {
     background-color: var(--base);
 }
 
 body {
-    font-family: "MonteCarlo", cursive;
+    font-family: "Faculty Glyphic", sans-serif;
     font-weight: 400;
     font-style: normal;
+    flex-direction: column;
+    max-width: var(--desktop);
+    margin-inline: auto;
 }

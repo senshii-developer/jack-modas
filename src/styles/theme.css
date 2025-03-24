@@ -11,7 +11,9 @@
     --base: #FFDFEF;
     --foreground: #D69ADE;
     --base-shadow: #e2a1c2;
-    --card-info-base: #DEC5EE;
+    
+    
+    /* --card-info-base: #DEC5EE; */
 
     --mobile: 20rem; 
     --tablet: 30rem; 

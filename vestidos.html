@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="src/styles/theme.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=MonteCarlo&display=swap" rel="stylesheet">
-    <script defer src="src/scripts/dress.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=MonteCarlo&display=swap"
+        rel="stylesheet">
+    <script defer src="src/scripts/dress.js" type="module"></script>
 </head>
 
 <body>
@@ -48,121 +49,208 @@
         </ul>
         <span class="spacer"></span>
         <ul class="nav-container">
-            <li class="nav-item">
-                <img src="public/images/pesquisa.png" alt="search-jm">
+            <li class="nav-item search-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
+                    <path fill="#441752" fill-rule="evenodd"
+                        d="M18.319 14.433A8.001 8.001 0 0 0 6.343 3.868a8 8 0 0 0 10.564 11.976l.043.045l4.242 4.243a1 1 0 1 0 1.415-1.415l-4.243-4.242zm-2.076-9.15a6 6 0 1 1-8.485 8.485a6 6 0 0 1 8.485-8.485"
+                        clip-rule="evenodd" />
+                </svg>
             </li>
             <li class="nav-item">
-                <img src="public/images/perfil.png" alt="perfil-jm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 20 20">
+                    <path fill="#441752"
+                        d="M10 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8m-4.991 9A2 2 0 0 0 3 13c0 1.691.833 2.966 2.135 3.797C6.417 17.614 8.145 18 10 18s3.583-.386 4.865-1.203C16.167 15.967 17 14.69 17 13a2 2 0 0 0-2-2z" />
+                </svg>
             </li>
             <li class="nav-item">
-                <img src="public/images/carrinho.png" alt="carrinho-jm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
+                    <path fill="#441752"
+                        d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+                </svg>
             </li>
         </ul>
     </header>
 
     <div class="cards-container">
         <div class="card">
-            <div class="card-image-container" id="monique" style="background-image:url('public/images/dress/monique/floral-green1.jpg')"></div>
+            <div class="card-image-container" id="monique"
+                style="background-image:url('public/images/dress/monique/floral-green1.jpg')"></div>
             <div class="card-info">
-                <div class="size-container"><span>
-                    G
-                </span>
-                <span>
-                    GG
-                </span>
-            </div>
-                <a href="" class="card-name">Vestido Monique</a>
-                <span class="card-price">R$329</span>
-                <div class="color-container">
-                    <label for="monique-green" style="--color-button:#b2c4ce" class="color">
-                        <input value="floral-green" name="monique" checked type="radio" id="monique-green">     
-                    </label>
+                <div class="card-info-left">
+                    <div class="size-container"><span>
+                            G
+                        </span>
+                        <span>
+                            GG
+                        </span>
+                    </div>
+                    <a href="" class="card-name">Vestido Monique</a>
+                    <span class="card-price">R$329</span>
+                    <div class="color-container">
+                        <label for="monique-green" style="--color-button:#b2c4ce" class="color">
+                            <input value="floral-green" name="monique" checked type="radio" id="monique-green">
+                        </label>
+                    </div>
+                </div>
+                <div class="card-info-right">
+                    <div class="button-container">
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+                            </svg>
+                        </button>
+                        <button class="slide-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="card-image-container" id="aurora" style="background-image:url('public/images/dress/aurora/flag-green1.jpg')"></div>
+            <div class="card-image-container" id="aurora"
+                style="background-image:url('public/images/dress/aurora/flag-green1.jpg')"></div>
             <div class="card-info">
-                <div class="size-container"><span>
-                    G
-                </span>
-                <span>
-                    GG
-                </span>
-            </div>
-                <a href="" class="card-name">Vestido Aurora</a>
-                <span class="card-price">R$248</span>
-                <div class="color-container">
-                    <label for="aurora-green" style="--color-button:#519959" class="color">
-                        <input value="flag-green" name="aurora" checked type="radio" id="aurora-green">     
-                    </label>
-                    <label for="aurora-blue" style="--color-button:#2c304f" class="color">
-                        <input value="marine-blue" name="aurora" type="radio" id="aurora-blue">     
-                    </label>
+                <div class="card-info-left">
+                    <div class="size-container"><span>
+                            G
+                        </span>
+                        <span>
+                            GG
+                        </span>
+                    </div>
+                    <a href="" class="card-name">Vestido Aurora</a>
+                    <span class="card-price">R$248</span>
+                    <div class="color-container">
+                        <label for="aurora-green" style="--color-button:#519959" class="color">
+                            <input value="flag-green" name="aurora" checked type="radio" id="aurora-green">
+                        </label>
+                        <label for="aurora-blue" style="--color-button:#2c304f" class="color">
+                            <input value="marine-blue" name="aurora" type="radio" id="aurora-blue">
+                        </label>
+                    </div>
+                </div>
+                <div class="card-info-right">
+                    <div class="button-container">
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+                            </svg>
+                        </button>
+                        <button class="slide-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="card-image-container" id="eloa" style="background-image:url('public/images/dress/eloa/Marron-caramel1.jpg')"></div>
+            <div class="card-image-container" id="eloa"
+                style="background-image:url('public/images/dress/eloa/Marron-caramel1.jpg')"></div>
             <div class="card-info">
-                <div class="size-container"><span>
-                    G
-                </span>
-                <span>
-                    GG
-                </span>
-            </div>
-                <a href="" class="card-name">Vestido Eloá</a>
-                <span class="card-price">R$373</span>
-                <div class="color-container">
-                    <label for="eloa-marron" style="--color-button:#7b2b20" class="color">
-                        <input value="Marron-caramel" name="eloa" checked type="radio" id="eloa-marron">     
-                    </label>
-                    <label for="eloa-white" style="--color-button:#eae5ee" class="color">
-                        <input value="Off-white-caramel" name="eloa"  type="radio" id="eloa-white">     
-                    </label>
+                <div class="card-info-left">
+                    <div class="size-container"><span>
+                            G
+                        </span>
+                        <span>
+                            GG
+                        </span>
+                    </div>
+                    <a href="" class="card-name">Vestido Eloá</a>
+                    <span class="card-price">R$373</span>
+                    <div class="color-container">
+                        <label for="eloa-marron" style="--color-button:#7b2b20" class="color">
+                            <input value="Marron-caramel" name="eloa" checked type="radio" id="eloa-marron">
+                        </label>
+                        <label for="eloa-white" style="--color-button:#eae5ee" class="color">
+                            <input value="Off-white-caramel" name="eloa" type="radio" id="eloa-white">
+                        </label>
+                    </div>
+                </div>
+                <div class="card-info-right">
+                    <div class="button-container">
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+                            </svg>
+                        </button>
+                        <button class="slide-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="card-image-container" id="samanta" style="background-image:url('public/images/dress/samanta/black1.jpg')"></div>
-            <div class="card-info">
-                <div class="size-container"><span>
-                    G
-                </span>
-                <span>
-                    GG
-                </span>
+            <div class="card-image-container" id="samanta"
+                style="background-image:url('public/images/dress/samanta/black1.jpg')">
             </div>
-                <a href="" class="card-name">Vestido Samanta</a>
-                <span class="card-price">R$354</span>
-                <div class="color-container">
-                    <label for="samanta-black" style="--color-button:#000000" class="color">
-                        <input value="black" name="samanta" checked type="radio" id="samanta-black">     
-                    </label>
-                    <label for="samanta-orange" style="--color-button:#e17738" class="color">
-                        <input value="orange" name="samanta" type="radio" id="samanta-orange">     
-                    </label>
+            <div class="card-info">
+                <div class="card-info-left">
+                    <div class="size-container"><span>
+                            G
+                        </span>
+                        <span>
+                            GG
+                        </span>
+                    </div>
+                    <a href="" class="card-name">Vestido Samanta</a>
+                    <span class="card-price">R$354</span>
+                    <div class="color-container">
+                        <label for="samanta-black" style="--color-button:#000000" class="color">
+                            <input value="black" name="samanta" checked type="radio" id="samanta-black">
+                        </label>
+                        <label for="samanta-orange" style="--color-button:#e17738" class="color">
+                            <input value="orange" name="samanta" type="radio" id="samanta-orange">
+                        </label>
+                    </div>
+                </div>
+                <div class="card-info-right">
+                    <div class="button-container">
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+                            </svg>
+                        </button>
+                        <button class="slide-show">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
 
-    <div id="cta-container">
-        <div id="cta-wrapper">
-            <div id="cta-message">
-                <span id="cta-title">Entre em contato!</span>
-            </div>
-            <div id="cta-button">
-                <button id="whats-button">
-                    <a href="https://wa.link/2ta3n3"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
-                            viewBox="0 0 24 24">
-                            <path fill="#441752"
-                                d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
-                        </svg></a>
-                </button>
+        <div id="cta-container">
+            <div id="cta-wrapper">
+                <div id="cta-message">
+                    <span id="cta-title">Entre em contato!</span>
+                </div>
+                <div id="cta-button">
+                    <button id="whats-button">
+                        <a href="https://wa.link/2ta3n3"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                viewBox="0 0 24 24">
+                                <path fill="#441752"
+                                    d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                            </svg></a>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
